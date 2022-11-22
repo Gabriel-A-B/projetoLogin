@@ -8,20 +8,50 @@
 
     <link rel="stylesheet" href="estilos/todos.css">
     <link rel="stylesheet" href="estilos/outros.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 </head>
 <body>
     <main>
-        <article id="login">
-
+        <section id="login">
+            
             <var id="formulario">
                 <h1>LOGIN</h1>
+
+                <form action="conta.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+
+                        <input type="email" name="email" id="iEmail" placeholder="email aqui"
+                        autocomplete="email" maxlength="30"required>
+
+                        <label for="iEmail">Login</label>
+                    </div>
+                 
+                    <div class="campo"> 
+                        <span class="material-icons">key</span>
+
+                        <input type="password" name="senha" id="iSenha" required 
+                        autocomplete="current-password" minlength="8" maxlength="20"
+                        placeholder="Senha">
+
+                        <label for="iSenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+
+                    <a href="#">Esqueci a senha</a>
+                </form>
 
                 <p>
                     Seja bem vindo! Por favor logue-se para 
                     podermos comesar
                 </p>
             </var>
-        </article>
+
+        </section>
     </main>
 </body>
 </html>
